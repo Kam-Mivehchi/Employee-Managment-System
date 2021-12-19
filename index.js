@@ -28,15 +28,23 @@ const main = async() => {
        message:'What would you like to do?',
         type: 'list',
         name:'choice',
-        choices: ['View All','View by Manager','View by Department', 'Update Managers','Delete Department', 'Delete role', 'Delete employees']
-        }
-        
-)
+        choices: ['View All Employees','View all Departments','View All Roles','View by Manager','View by Department', 'Update Managers',
+        'Delete Department', 'Delete employees']
+        });
     
         switch(response.choice){
-            case 'View All':
+            case 'View All Employees':
                 const employees = await query('SELECT * FROM employee')
                 console.table(employees);
+                break;
+                case 'View all Departments':
+                const employeees = await query('SELECT * FROM department')
+                console.table(employeees);
+                break;
+
+                case 'View All Roles':
+                const employeeees = await query('SELECT * FROM role')
+                console.table(employeeees);
                 break;
 
             case 'View by Manager':
@@ -132,7 +140,7 @@ const main = async() => {
                 break;   
             
             case 'Update Managers':
-                const employee_list = await query('SELECT * FROM employee')
+                const employee_list = await query('SELECT * FROM employee');
                 console.table(employee_list);
 
                 const update = await prompt({
@@ -151,7 +159,41 @@ const main = async() => {
                 query(`UPDATE employee SET employee.manager_id=${update_manage.managerid} WHERE ${update.emp}=employee.id`);
                 console.table(updateTable);
                 
-                break;
+                break;    
+            
+            case 'Delete employees':
+                const employee_lists = await query('SELECT * FROM employee');
+                console.table(employee_lists);
+
+                const updates = await prompt({
+                    message:'Enter the Employee id that you wish to Delete',
+                    type: 'number',
+                    name:'emp',
                 }
+                )
+                
+                const updaterTable =await 
+                query(`DELETE FROM employee WHERE ${updates.emp}=employee.id`);
+                console.table(updaterTable);
+
+            break;
+            case 'Delete Department':
+                const employee_listss = await query('SELECT * FROM department');
+                console.table(employee_listss);
+
+                const updatess = await prompt({
+                    message:'Enter the Department ID that you wish to Delete',
+                    type: 'number',
+                    name:'emp',
+                }
+                )
+                
+                const updaterrTable =await 
+                query(`DELETE FROM department WHERE ${updatess.emp}=department.id`);
+                console.table(updaterrTable);
+                
+
+            break;
+}
 }
 main();
