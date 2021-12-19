@@ -24,7 +24,7 @@
 + type 'node index.js' in terminal
 
 
-## Walkthrough
+## Walkthrough Video
 
 
 https://user-images.githubusercontent.com/90432404/146663442-0f990856-c656-4a02-88d5-71901f1ecc05.mp4
