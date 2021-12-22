@@ -8,7 +8,7 @@ const util = require('util');
 const db = mysql.createConnection({
     host:"localhost",
     user:'root',
-    password: 'Kamyar98',
+    password: 'root',
     database: "employee_db"
 });
 
