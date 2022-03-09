@@ -30,9 +30,9 @@
      + Employee roles
      + Employee Managers
    + Delete
-    + Departments
-    + Roles
-    + Employees
+     + Departments
+     + Roles
+     + Employees
  + When User selects a view command they are presented with a table of the desired content
  + When a user selects View Employees they are presented with the name, department, title, salary and managers for all employees
  
