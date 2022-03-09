@@ -12,9 +12,9 @@
  
  ## Description
  + Employee managment CLI utilizing...
-  + Inquirer to gather clent input
-  + SQL database for data storage and access
-  + MySQL2 for connecting to Database
+    + Inquirer to gather clent input
+    + SQL database for data storage and access
+    + MySQL2 for connecting to Database
  + Application allows user to
   + View
     + Employees
