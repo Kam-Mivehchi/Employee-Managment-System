@@ -11,11 +11,11 @@
  
  
  ## Description
- - Employee managment CLI utilizing...
+ + Employee managment CLI utilizing...
   + Inquirer to gather clent input
   + SQL database for data storage and access
   + MySQL2 for connecting to Database
- - Application allows user to
+ + Application allows user to
   + View
     + Employees
     + Roles
@@ -33,8 +33,8 @@
    + Departments
    + Roles
    + Employees
- - When User selects a view command they are presented with a table of the desired content
- - When a user selects View Employees they are presented with the name, department, title, salary and managers for all employees
+ + When User selects a view command they are presented with a table of the desired content
+ + When a user selects View Employees they are presented with the name, department, title, salary and managers for all employees
  
  ## WalkThrough Video
 
