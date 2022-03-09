@@ -3,8 +3,6 @@
 ## Table of Contents
 [Description](#Description)
  <br>
-[Screenshots](#screenshots)
- <br>
  [License](#license)
  <br>
 [Live Deployment](#Deployment)
