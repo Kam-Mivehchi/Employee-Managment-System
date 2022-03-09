@@ -16,23 +16,23 @@
     + SQL database for data storage and access
     + MySQL2 for connecting to Database
  + Application allows user to
-  + View
-    + Employees
-    + Roles
+   + View
+     + Employees
+     + Roles
+     + Departments
+     + Employees by manager
+     + Employees by Department
+   + Add New
+     + Departments
+     + Employees
+     + Roles
+   + Update
+     + Employee roles
+     + Employee Managers
+   + Delete
     + Departments
-    + Employees by manager
-    + Employees by Department
-  + Add New
-    + Departments
-    + Employees
     + Roles
-  + Update
-    + Employee roles
-    + Employee Managers
-  + Delete
-   + Departments
-   + Roles
-   + Employees
+    + Employees
  + When User selects a view command they are presented with a table of the desired content
  + When a user selects View Employees they are presented with the name, department, title, salary and managers for all employees
  
